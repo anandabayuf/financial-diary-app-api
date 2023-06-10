@@ -1,0 +1,6 @@
+exports.ITEM_TYPE = [
+	"INCOME",
+	"WITHDRAW_OR_TRANSFER",
+	"SPEND",
+	"SPEND_ONLY_IN_WALLET",
+];

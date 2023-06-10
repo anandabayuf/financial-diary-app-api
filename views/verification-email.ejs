@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Email Verification - Financial Diary App</title>
+</head>
+  <body >
+    <div style="padding: 10px;">
+        <img src="cid:logo" width="128px" />
+            <hr>
+            <div style="font-weight: bold;">Hi <%=name%>!</div>
+            <p style="text-justify: auto;">Welcome to Financial Diary! Financial Diary is a free app designed to recording your income and spendings. On Financial Diary, you can record a spend and income, connect it to your created wallet, view remaining wallet balance, and others.</p>
+            <p style="text-justify: auto;">Please verify the email address you registered on Financial Diary by clicking the button below. This link will expire in 1 day.</p>
+            <div style="display: flex;justify-content: center;align-items: center;"><a href="<%=link%>" style="cursor: pointer;"><button style="background-color: #91c3ff;padding: 5px;border-radius: 10px;border: none;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" >Verify Now</button></a></div>
+            <p style="text-justify: auto;">If the button above doesn't work, please copy and open the following link with your browser.</p>
+            <a href="<%=link%>"><%=link%></a>
+            <p style="text-justify: auto;">Thanks!</p>
+            <p style="text-justify: auto;">Financial Diary Team</p>
+    </div>
+</body>
+</html>
