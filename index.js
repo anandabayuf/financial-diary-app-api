@@ -19,6 +19,8 @@ app.use(express.static(__dirname + "/public"));
 
 controllers(app);
 
+console.log(MONGO_URI);
+
 mongoose
 	.connect(MONGO_URI)
 	.then(() => {
@@ -31,5 +33,6 @@ mongoose
 		});
 	})
 	.catch((error) => {
+		console.log(MONGO_URI);
 		console.log("Unable to connect to MongoDB: ", error);
 	});
