@@ -1,17 +1,4 @@
 const mongoose = require("mongoose");
-const { config } = require("dotenv");
-const { MONGO_URI } = require("../constants/constants");
-
-config();
-
-mongoose
-	.connect(MONGO_URI)
-	.then(() => {
-		console.log("MongoDB connection has been established successfully.");
-	})
-	.catch((error) => {
-		console.log("Unable to connect to MongoDB: ", error);
-	});
 
 exports.UserSchema = mongoose.model("User", {
 	username: {
@@ -206,3 +193,5 @@ exports.WalletNoteSchema = mongoose.model("WalletNote", {
 // 		required: true,
 // 	},
 // });
+
+module.exports = mongoose;
