@@ -4,7 +4,7 @@ const { MONGO_URI } = require("../constants/constants");
 
 config();
 
-mongoose.set("strictQuery", false);
+mongoose.set("strictQuery", true);
 
 mongoose
 	.connect(MONGO_URI)

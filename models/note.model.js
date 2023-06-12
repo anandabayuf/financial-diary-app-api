@@ -34,7 +34,7 @@ exports.getAll = (query, userId) => {
 	return new Promise((resolve, reject) => {
 		schema.NoteSchema.find({ [key]: value, userId: userId })
 			.lean()
-			.sort({ date: "ascending" })
+			.sort({ date: "descending" })
 			.exec((err, result) => {
 				if (err) {
 					reject(err);
