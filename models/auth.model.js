@@ -43,7 +43,7 @@ exports.authenticate = (data) => {
 						`sha512`
 					)
 					.toString(`hex`);
-				console.log(passwordFromDB, passwordFromUser);
+
 				if (passwordFromDB == passwordFromUser) {
 					if (response.isEmailVerified) {
 						const data = {
