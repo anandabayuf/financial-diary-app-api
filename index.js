@@ -19,7 +19,7 @@ app.use(express.static(__dirname + "/public"));
 
 controllers(app);
 
-console.log(MONGO_URI);
+mongoose.set("strictQuery", false);
 
 mongoose
 	.connect(MONGO_URI)
